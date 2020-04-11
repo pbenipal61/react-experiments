@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.drop-zone {
+    height: 50%;
+    width: 50%;
+    background-color: #61dafb;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.fill-parent {
+    height: 100%;
+    width: 100%;
+}
