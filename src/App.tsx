@@ -1,11 +1,11 @@
 import React from 'react';
-import DropZoneArea from "./DropZoneArea";
+import Cropper from "./Cropper";
 import styles from "./styles.module.css";
 
 function App() {
   return (
     <div className = {styles['wrapper']}>
-      <DropZoneArea />
+      <Cropper />
     </div>
   );
 }
