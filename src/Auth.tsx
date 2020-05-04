@@ -2,10 +2,10 @@ import React from 'react';
 import Auth from '@aws-amplify/auth';
 
 Auth.configure({
-    identityPoolId: "eu-central-1:c3a2bfaa-cf75-45cc-b328-79d0363f0dac",
+    identityPoolId: "eu-central-1:3cbe0af8-9301-450f-b13b-505ddee5da55",
     region: "eu-central-1",
-    userPoolId: "eu-central-1_ebEgxyTEV",
-    userPoolWebClientId: "1jro5ae4nn1kn2k667st6udivm"
+    userPoolId: "eu-central-1_s7Gxlw4MD",
+    userPoolWebClientId: "kojrss4u053o1pgc14f7ng7gr"
 });
 
 const CustomAuth =  (props: any) => {
@@ -14,10 +14,11 @@ const CustomAuth =  (props: any) => {
     try{
         console.log("registering ...");
         const user = await Auth.signUp({
-            username: "claritye59@zdecadesgl.com",
+            username: "pbenipal61",
             password: "Theprodigyclub1!",
             attributes: {
-                name: "Prabhjot Singh"
+                name: "Prabhjot Singh",
+                email: "prabhjotbenipal97@gmail.com"
             }
         });
 
@@ -33,7 +34,7 @@ const CustomAuth =  (props: any) => {
 
           console.log("Confirming account ...");
 
-          const user = await Auth.confirmSignUp("prabhjotbenipal97@gmail.com", "609981");
+          const user = await Auth.confirmSignUp("pbenipal61", "539024");
           console.log(user);
 
       }
@@ -47,7 +48,7 @@ const CustomAuth =  (props: any) => {
 
             console.log("Resending confirmation code ...");
 
-            const user = await Auth.resendSignUp("prabhjotbenipal97@gmail.com");
+            const user = await Auth.resendSignUp("claritye59@zdecadesgl.com");
             console.log(user);
 
         }
