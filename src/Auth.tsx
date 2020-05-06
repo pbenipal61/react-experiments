@@ -10,15 +10,17 @@ Auth.configure({
 
 const CustomAuth =  (props: any) => {
 
+
     const register = async () => {
     try{
         console.log("registering ...");
         const user = await Auth.signUp({
-            username: "pbenipal61",
+            username: "pbenipal62",
             password: "Theprodigyclub1!",
             attributes: {
                 name: "Prabhjot Singh",
-                email: "prabhjotbenipal97@gmail.com"
+                email: "prabhjotbenipal97@gmail.com",
+                "custom:isBusiness": "false"
             }
         });
 
@@ -34,7 +36,7 @@ const CustomAuth =  (props: any) => {
 
           console.log("Confirming account ...");
 
-          const user = await Auth.confirmSignUp("pbenipal61", "539024");
+          const user = await Auth.confirmSignUp("pbenipal62", "443815");
           console.log(user);
 
       }
@@ -48,7 +50,20 @@ const CustomAuth =  (props: any) => {
 
             console.log("Resending confirmation code ...");
 
-            const user = await Auth.resendSignUp("claritye59@zdecadesgl.com");
+            const user = await Auth.resendSignUp("prabhjotbenipal97@gmail.com");
+            console.log(user);
+
+        }
+        catch(err){
+            console.log(err);
+        }
+    };
+
+    const login = async () => {
+        try{
+
+            console.log("Login in ...");
+            const user = await Auth.signIn("pbenipal62", "Theprodigyclub1!");
             console.log(user);
 
         }
@@ -60,6 +75,11 @@ const CustomAuth =  (props: any) => {
         <button onClick={register}>Register</button>
         <button onClick={confirmRegister}>Confirm account</button>
         <button onClick={resendConfirmationCode}>Resend confirmation code</button>
+        <button onClick={login}>Login</button>
     </div>
 };
 export default  CustomAuth;
+
+// UsernameExistsException
+// Username registered already
+
