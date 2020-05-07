@@ -19,7 +19,7 @@ const CustomAuth =  (props: any) => {
             password: "Theprodigyclub1!",
             attributes: {
                 name: "Prabhjot Singh",
-                email: "prabhjotbenipal97@gmail.com",
+                email: "prabhjotbenipal1997@gmail.com",
                 "custom:isBusiness": "false"
             }
         });
@@ -36,7 +36,7 @@ const CustomAuth =  (props: any) => {
 
           console.log("Confirming account ...");
 
-          const user = await Auth.confirmSignUp("pbenipal62", "443815");
+          const user = await Auth.confirmSignUp("pbenipal61", "049589");
           console.log(user);
 
       }
@@ -80,6 +80,6 @@ const CustomAuth =  (props: any) => {
 };
 export default  CustomAuth;
 
-// UsernameExistsException
-// Username registered already
+// user.code = UsernameExistsException - Username registered already
+// user.userConfirmed = false - User not confirmed
 
