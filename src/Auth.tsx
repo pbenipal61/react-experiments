@@ -19,8 +19,9 @@ const CustomAuth =  (props: any) => {
             password: "Theprodigyclub1!",
             attributes: {
                 name: "Prabhjot Singh",
-                email: "prabhjotbenipal1997@gmail.com",
-                "custom:isBusiness": "false"
+                email: "kirak25144@zaelmo.com",
+                "custom:isBusiness": "false",
+                "custom:businessId": "business if"
             }
         });
 
@@ -36,12 +37,15 @@ const CustomAuth =  (props: any) => {
 
           console.log("Confirming account ...");
 
-          const user = await Auth.confirmSignUp("pbenipal61", "049589");
+          const user = await Auth.confirmSignUp("pbenipal62", "608778");
           console.log(user);
 
       }
       catch(err){
-          console.log(err);
+
+          console.error(err);
+
+      //    err.code === "CodeMismatchException"
       }
     };
 

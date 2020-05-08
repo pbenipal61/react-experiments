@@ -1,12 +1,12 @@
 import React from 'react';
 import Cropper from "./Cropper";
 import styles from "./styles.module.css";
-import Auth from "./Auth";
+import ParentHub from "./Hub/ParentHub";
 
 function App() {
   return (
     <div className = {styles['wrapper']}>
-      <Auth />
+      <ParentHub />
     </div>
   );
 }
