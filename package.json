@@ -5,15 +5,19 @@
   "dependencies": {
     "@aws-amplify/auth": "^3.2.6",
     "@aws-amplify/core": "^3.2.6",
+    "@blueprintjs/core": "^3.26.1",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "@types/jest": "^24.0.0",
+    "@types/lodash": "^4.14.151",
     "@types/node": "^12.0.0",
     "@types/react": "^16.9.0",
     "@types/react-dom": "^16.9.0",
     "cropperjs": "^1.5.6",
+    "fingerprintjs2": "^2.1.0",
     "framer": "^1.1.7",
+    "lodash": "^4.17.15",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-dropzone": "^10.2.2",
@@ -40,5 +44,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/fingerprintjs2": "^2.0.0"
   }
 }
