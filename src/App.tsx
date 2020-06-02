@@ -19,7 +19,7 @@ function App() {
     <div className = {styles['wrapper']}>
         <button onClick={() => {
             storage.save("key", "some dope ass data");
-            setCmp(<LocalStorageExp />);
+            setCmp(<Fingerprint />);
         }}>Local storage exps</button>
         {cmp}
     </div>
